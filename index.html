@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel = "stylesheet" href = "assets/css.css">
+        <title>JavaScript</title>
+    </head>
+    
+    <body>
+        <div class= "container">
+            
+            <div class= "menu">
+                <div class="jsIcon">
+                    <img src="assets/images/pngegg.png" alt="" width="120px" height="auto">
+                 </div>
+                 <div class="logoText">
+                    <p>JavaScript</p>
+                </div>
+
+                <nav class="navigation">
+                    <a class="task" id="t0">ЗАДАНИЕ 0</a>
+                    <a class="task" id="t1">ЗАДАНИЕ 1</a>
+                    <a class="task" id="t2">ЗАДАНИЕ 2</a>
+                    <a class="task" id="t3">ЗАДАНИЕ 3</a>
+                    <a class="task" id="t4" href="#stopwatch">ЗАДАНИЕ 4</a>
+                    <a class="task" id="t5" href="test.html">ЗАДАНИЕ 5</a>
+                    <a class="task" id="t6">ЗАДАНИЕ 6</a>
+                </nav>
+            </div>
+
+            <div class="firstContainerText">
+                <div class="header1"><span>ДЛЯ НАЧИНАЮЩИХ</span></div>
+                <div class="header1"><p>Что мы знаем о JS?</p></div>
+                <div class="headerMainText">
+                    <p>JavaScript — это кросс-платформенный, 
+                    объектно-ориентированный скриптовый язык, являющийся небольшим и 
+                    легковесным. Внутри среды исполнения JavaScript может быть связан с 
+                    объектами данной среды и предоставлять программный контроль над ними.
+                    Во frontend-части сайтов язык используют для создания интерактива 
+                    (анимаций, всплывающих форм, автозаполнения), так как он связан с HTML и CSS 
+                    и может ими манипулировать. В backend-части с языком JavaScript работают на 
+                    платформе Node.js. С ее помощью, например, разрабатывают серверные веб-приложения 
+                    и подключают библиотеки. В поисковике Google на JavaScript работает строка 
+                    автозаполнения, а Netflix, Uber, eBay используют его в своем backend. 
+                    Уже 6 лет JS — самый популярный язык среди разработчиков по версии GitHub.</p>
+                
+                </div>
+                <div class="mainInfo">
+                    <div class="column">
+                        <h3>Где применяется JavaScript</h3>
+                        <div class="horizLine">____________________________________________________________________</div>
+                        
+                        <div class="block">
+                            <div class="imgOneBlock">
+                                <img src="assets/images/Front.png" alt=""  width="150px" height="auto">
+                            </div>
+                            <div class="textOneBlock">
+                                <p class="tittleBlockOne">Клиентская часть веб — приложений (frontend)</p>
+                                <p>Это интерфейс страницы, то есть всё, что видит пользователь: 
+                                    контент, кнопки, формы обратной связи, меню. С помощью JS 
+                                    интерфейс реагирует на действия пользователя (клики мыши, 
+                                    нажатия клавиш), также язык отвечает за запоминание данных 
+                                    и автозаполнение форм.</p>
+                            </div>
+                        </div>
+                        <div class="block">
+                
+                            <div class="textOneBlock">
+                                <p class="tittleBlockOne">Серверная часть веб — приложений (backend)</p>
+                                <p>Серверный код пишут на платформе Node.js. На JS работают, например, запросы AJAX 
+                                    (asynchronous javascript and XML), которые отправляются на сервер в фоновом режиме, 
+                                    без перезагрузки веб-страницы, и push-уведомления — всплывающие сообщения в браузере, 
+                                    которые реализуются с помощью технологии Comet.</p>
+                            </div>
+                            <div class="imgOneBlock">
+                                <img src="assets/images/application.png" alt=""  width="150px" height="auto">
+                            </div>
+                        </div>
+                        <div class="block">
+                            <div class="imgOneBlock">
+                                <img src="assets/images/mobapp.png" alt=""  width="150px" height="auto">
+                            </div>
+                            <div class="textOneBlock">
+                                <p class="tittleBlockOne">Мобильные приложения на Android, iOS, Windows Mobile</p>
+                                <p>Когда нужно кросс-платформенное приложение или адаптация веб-приложения, а 
+                                    языков Kotlin (для Android) и Swift (для iOS) недостаточно, то используется 
+                                    JavaScript.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column">
+                        <h3>Преимущества и недостатки JavaScript</h3>
+                        <div class="horizLine">_____________________________________________________________________________</div>
+                        <div class="mainTwoColumn">
+                            
+                            <div class="blockTwoMain">
+                                <div class="plus"><h2>+</h2></div>
+                                <div>
+                                    <p class="tittleBlockTwo"> Интерпретируемый язык</p>
+                                    <p>Код работает сразу же в браузере, не требуется каких-либо затрат для его компиляции. 
+                                        Это, несомненно, плюс: не нужно ничего ждать, результат кода можно сразу же увидеть в браузере.</p>
+                                </div>
+                            </div>
+
+                            <div class="blockTwoMain">
+                                <div class="minus"><h2>-</h2></div>
+                                <div>
+                                    <p class="tittleBlockTwoM"> Отсутствие чтения и загрузки файлов</p>
+                                    <p>JavaScript на веб-странице не может читать/записывать произвольные файлы на жёстком диске, копировать их 
+                                        или запускать программы. Он не имеет прямого доступа к системным функциям ОС. </p>
+                                </div>
+                            </div>
+
+                            <div class="blockTwoMain">
+                                <div class="plus"><h2>+</h2></div>
+                                <div>
+                                    <p class="tittleBlockTwo"> Простота и рациональность применения</p>
+                                    <p>Несложные задачи можно решать быстро, порой достаточно 5 минут. Для непростых в интернете полно вариантов решения, 
+                                        остается лишь выбрать подходящий и использовать его.Сначала код, возможно, покажется очень трудным, однако это ощущение 
+                                        быстро пройдет. Кроме того, сильно мотивирует визуальное отображение действий.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="blockTwoMain">
+                                <div class="minus"><h2>-</h2></div>
+                                <div>
+                                    <p class="tittleBlockTwoM"> Динамическая типизация</p>
+                                    <p>Причина частых проблем при разработке – нет возможности выявить ошибки заранее, только на этапе работы.
+                                         Еще JavaScript игнорирует явные несостыковки, которые прямо-таки бросаются в глаза. Поэтому это 
+                                         настоящая боль для человека, который захотел изучить Javascript после освоения строго типизированного 
+                                         языка (Java, C, C++).</p>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    
+                    </div>
+                </div>
+                
+                <div class = "stopwatch" id="stopwatch">
+                        <span class="time"></span>
+                        <div class="otchet"><input id="input" type="text"></div>
+                        <div class="buttons">
+                            <button class="button" id="start">Start</button>
+                            <button class="button" id="stop">Stop</button>
+                            <button class="button" id="reset">Reset</button>
+                            <button class="button" id="PastTime">Past time</button>
+                        </div>
+                </div>
+
+
+            </div>
+
+
+
+            <div class="finalBlock">
+                
+                <footer class="footer">
+                    <div class="footerAllBlock">
+                    <div class="footerLeft">
+                        <a href="#">About </a>
+                        <span> / </span>
+                        <a href="#">Help </a>
+                        <span> / </span>
+                        <a href="#">Privacy</a>                  
+                    </div>
+                    <div class="footerAll">
+                        © 2022 All rights reserved.
+                    </div>
+                    </div>
+                </footer>
+            </div>
+
+        
+        </div>
+
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <p id="data"></p>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>

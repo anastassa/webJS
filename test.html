@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="assets/cssTest.css" id="TaskOneCss">
+    <meta charset="utf-8">
+    <title>Test JS</title>
+<body>
+    <div>
+        <h3><a class = "button" href="index.html">Назад</a></h3>
+    </div>
+    <div>
+       <h2> Проверь свои знания о JavaScript</h2>
+    </div>
+<form name="quiz" class="quiz" id="quiz" action="javascript:check();">
+<h3> 1.Какие циклы есть в языке JavaScript?</h3>
+<div class="ver"></div>
+<input name="vopros1" checked="checked" value="yes" id="value1" type="radio"> for, while, do while <br>
+<input name="vopros1" value="no" id="value2" type="radio"> for, forMap, foreach, while <br>
+<input name="vopros1" value="no" id="value3" type="radio"> for, while, do while, foreach <br>
+
+<h3> 2.Что делает JS? </h3>
+<div class="ver"></div>
+<input name="vopros2" checked="checked" value="no" id="value1" type="radio"> Создает разметку на странице сайта <br>
+<input name="vopros2" value="yes" id="value2" type="radio"> Отвечает за функции на стороне клиента <br>
+<input name="vopros2" value="no" id="value3" type="radio"> Создает стилевое оформление сайта  <br>
+
+<h3> 3.В чем разница между confirm и prompt? </h3>
+<div class="ver"></div>
+<input name="vopros3" checked="checked" value="no" id="value1" type="radio"> Ни в чем <br>
+<input name="vopros3" value="no" id="value2" type="radio"> confirm вызывает окно с полем для ввода, prompt для подтверждения <br>
+<input name="vopros3" value="yes" id="value3" type="radio"> prompt вызывает окно с полем для ввода, confirm для подтверждения <br>
+
+<h3> 4.Где верно указан вывод данных? </h3>
+<div class="ver"></div>
+<input name="vopros4" checked="checked" value="yes" id="value1" type="radio"> documentWrite("Hello"); <br>
+<input name="vopros4" value="no" id="value2" type="radio"> print(Hello); <br>
+<input name="vopros4" value="no" id="value3" type="radio"> console.log("Hello"); <br>
+
+<h3> 5. Какая арифметическая операция приводит к ошибке в JS? </h3>
+<div class="ver"></div>
+<input name="vopros5" checked="checked" value="no" id="value1" type="radio"> Деление на нуль <br>
+<input name="vopros5" value="no" id="value2" type="radio"> Умножение на строку <br>
+<input name="vopros5" value="yes" id="value3" type="radio"> Никакая <br>
+
+<h3> 6.Что такое условный оператор? </h3>
+<div class="ver"></div>
+<input name="vopros6" checked="checked" value="no" id="value1" type="radio"> Конструкция, что выполняет код несколько раз <br>
+<input name="vopros6" value="no" id="value2" type="radio"> Конструкция для создания отдельной переменной <br>
+<input name="vopros6" value="yes" id="value3" type="radio"> Оператор сравнения значений <br>
+
+<h3> 7.Какие значения можно хранить в переменных? </h3>
+<div class="ver"></div>
+<input name="vopros7" checked="checked" value="yes" id="value1" type="radio"> Строки, числа с точкой, простые числа и булевые выражения <br>
+<input name="vopros7" value="no" id="value2" type="radio"> Строки, простые числа и булевые выражения<br>
+<input name="vopros7" value="no" id="value3" type="radio"> Строки, числа с точкой, простые числае <br>
+
+<h3> 8. Что делает оператор === ? </h3>
+<div class="ver"></div>
+<input name="vopros8" checked="checked" value="no" id="value1" type="radio"> Проверяет правильность введённых данных<br>
+<input name="vopros8" value="yes" id="value2" type="radio"> Сравнивает без приведения типа <br>
+<input name="vopros8" value="no" id="value3" type="radio"> Нет такого оператора; <br>
+
+<h3> 9.Где верно указан запуск всплывающего окна? </h3>
+<div class="ver"></div>
+<input name="vopros9" checked="checked" value="no" id="value1" type="radio"> new alert("hi") <br>
+<input name="vopros9" value="no" id="value2" type="radio"> нигде <br>
+<input name="vopros9" value="yes" id="value3" type="radio"> alert("hi") <br>
+
+<h3> 10. Какая разница между глобальной и локальной переменной?</h3>
+<div class="ver"></div>
+<input name="vopros10" checked="checked" value="yes" id="value1" type="radio"> Глобальные видны повсюду, локальные только в функциях <br>
+<input name="vopros10" value="no" id="value2" type="radio">  Локальные видны повсюду, глобальные только в функциях <br>
+<input name="vopros10" value="no" id="value3" type="radio"> Отличий нет <br>
+
+<input class = "button" value="ПРОВЕРИТЬ" type="submit">
+</form>
+
+<script src="script.js"></script>
+
+</body>
