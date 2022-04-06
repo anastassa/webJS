@@ -32,7 +32,7 @@ task1.onclick = function (){
     let h = Number(prompt("Введи высоту треугольника"));
     let s = (a*h)/2;
 
-        if(typeof s === 'NAN') alert("Площадь треугольника: " + s);
+        if(typeof s != 'NAN') alert("Площадь треугольника: " + s);
         else alert("Нужно ввести числа!");   
 }
 
