@@ -281,4 +281,17 @@ font-weight: bold;
         color:#fcdd00;
         background-color: black;
     }
+    /*убрать стрелки input*/
+    /*для Chrome*/
+    input[type="number"]::-webkit-outer-spin-button,
+    input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    }
+    /*для других браузеров*/
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    }
     
