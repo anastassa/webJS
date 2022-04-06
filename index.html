@@ -140,7 +140,7 @@
                 
                 <div class = "stopwatch" id="stopwatch">
                         <span class="time"></span>
-                        <div class="otchet"><input id="input" type="text"></div>
+                        <div class="otchet"><input id="input" type="number" onkeypress='return event.charCode >= 48 && event.charCode <= 57'></div>
                         <div class="buttons">
                             <button class="button" id="start">Start</button>
                             <button class="button" id="stop">Stop</button>
