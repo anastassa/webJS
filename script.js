@@ -67,50 +67,51 @@ else alert("Максимальный элемент: " + Math.max(...arr) + "\n"
 //Задание 4
 
 const input = document.getElementById('input');
-            const blockTime = document.querySelector('.time');
-            let interval;
-            let tmp;
+           const blockTime = document.querySelector('.time');
+let interval;
+let tmp;
  
-            blockTime.innerHTML = 0;
+blockTime.innerHTML = 0;
+input.value = 0;
+ 
+document.getElementById('start').addEventListener('click', () => {
+    if (input.value < 0) {
+    input.value = 0;
+    blockTime.innerHTML = 0;
+                
+    } 
+              
+ 
+blockTime.innerHTML = input.value;
+             
+clearInterval(interval);
+interval = setInterval(subtractTime, 1000);
+});
+ 
+document.getElementById('stop').addEventListener('click', () => {
+clearInterval(interval);
+});
+ 
+document.getElementById('reset').addEventListener('click', () => {
+input.value = 0;
+blockTime.innerHTML = 0;
+ });
+ 
+function subtractTime() {
+    if (blockTime.innerHTML > 0) {
+        blockTime.innerHTML--;
+            if (input.value < 0 || blockTime.innerHTML == 0) {
             input.value = 0;
- 
-            document.getElementById('start').addEventListener('click', () => {
-             if (input.value < 0) {
-              input.value = 0;
-              blockTime.innerHTML = 0;
-              }
- 
-             blockTime.innerHTML = input.value;
+            blockTime.innerHTML = 0;
+            }
+    } else {
+    clearInterval(interval);
+    }
+}
+document.getElementById('PastTime').addEventListener('click', () => {
+alert(input.value-blockTime.innerHTML);
              
-     
-             clearInterval(interval);
-             interval = setInterval(subtractTime, 1000);
-             });
- 
-              document.getElementById('stop').addEventListener('click', () => {
-              clearInterval(interval);
-              });
- 
-               document.getElementById('reset').addEventListener('click', () => {
-               input.value = 0;
-               blockTime.innerHTML = 0;
-               });
- 
-              function subtractTime() {
-              if (blockTime.innerHTML > 0) {
-              blockTime.innerHTML--;
-              if (input.value < 0 || blockTime.innerHTML == 0) {
-                input.value = 0;
-                blockTime.innerHTML = 0;
-              }
-              } else {
-              clearInterval(interval);
-              }
-              }
-              document.getElementById('PastTime').addEventListener('click', () => {
-                  alert(input.value-blockTime.innerHTML);
-             
-               });
+});
 
 //Задание 5
 
